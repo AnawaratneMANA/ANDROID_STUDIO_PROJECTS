@@ -23,6 +23,7 @@
     <HorizontalScrollView
         android:layout_width="390dp"
         android:layout_height="206dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.476"
@@ -38,20 +39,33 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
+                android:onClick="handleSelection"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/movie1" />
 
             <ImageButton
-                android:layout_marginStart="5dp"
                 android:id="@+id/movie2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:onClick="handleSelection"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@id/movie1"
                 app:layout_constraintTop_toTopOf="@id/movie1"
                 app:srcCompat="@drawable/movie2" />
+
+            <ImageButton
+                android:id="@+id/movie3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:onClick="handleSelection"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/movie2"
+                app:layout_constraintTop_toTopOf="@id/movie2"
+                app:srcCompat="@drawable/movie3" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </HorizontalScrollView>
 
